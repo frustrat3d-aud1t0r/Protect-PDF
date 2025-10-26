@@ -8,17 +8,18 @@
 <h4 align="center">Lightweight Windows utility for securing PDF documents with AES-256 encryption</h4>
 
 <p align="center">
+<img src="https://img.shields.io/badge/version-1.0.5-blue.svg">
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-Authorized%20Use-red.svg"></a>
 <a href="https://github.com/frustrat3d-aud1t0r/Protect-PDF/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>
 <a href="https://github.com/frustrat3d-aud1t0r/Protect-PDF/releases"><img src="https://img.shields.io/github/release/frustrat3d-aud1t0r/Protect-PDF"></a>
-<a href="https://img.shields.io/badge/platform-Windows%2010%2B-0078D6.svg"><img src="https://img.shields.io/badge/platform-Windows%2010%2B-0078D6.svg?logo=windows"></a>
+<img src="https://img.shields.io/badge/platform-Windows%2010%2B-0078D6.svg?logo=windows">
 </p>
 
 <p align="center">
-  <a href="#-install-pdf-password-protection-tool">Install</a> •
+  <a href="#-quick-start---zero-configuration-required">Quick Start</a> •
   <a href="#-features">Features</a> •
   <a href="#-running-the-tool">Usage</a> •
-  <a href="#-for-security-teams">For Security Teams</a> •
+  <a href="#for-security-teams">For Security Teams</a> •
   <a href="#-troubleshooting">Troubleshooting</a>
 </p>
 
@@ -38,6 +39,7 @@ PDF Password Protection Tool is a specialized Windows utility designed to automa
 - 📅 **Compliance Tracking** - 30-day retention monitoring for data protection regulations
 - ⚡ **Drag-and-Drop Interface** - Zero-command-line workflow for rapid encryption
 - 🎯 **Smart File Naming** - Automated timestamped output (YYYYMMDD) with collision prevention
+- 🔄 **Batch Processing** - Sequential multi-file encryption capabilities
 - 🛠️ **Zero Configuration** - Automatic dependency installation on first run
 
 ## Permission Matrix
@@ -113,6 +115,16 @@ For security teams and compliance professionals, PDF Password Protection Tool pr
 # Set user password: ViewOnly123!
 # Set owner password: FullAccess456!@
 # Distribute user password to viewers, keep owner password for editors
+```
+
+### Batch Processing Example
+
+```bash
+# Process multiple files by running Protect-PDF.bat repeatedly
+# Or create a PowerShell script for automation:
+Get-ChildItem *.pdf | ForEach-Object {
+    # Call Protect-PDF.bat with each file
+}
 ```
 
 ## 📊 Encryption Specifications
