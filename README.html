@@ -1,169 +1,91 @@
-# 🔐 PDF Password Protection Tool
+# PDF Password Protection Tool
 
-### Secure Your PDFs with AES-256 Encryption
+> A lightweight Windows utility for securing PDF documents with AES-256 encryption. Designed for compliance, privacy, and data protection workflows.
 
 ![Version](https://img.shields.io/badge/version-1.0.5-blue.svg)
-![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-lightgrey.svg)
-![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-0078D6.svg?logo=windows)
+![Python](https://img.shields.io/badge/python-3.8%2B-3776AB.svg?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/license-Authorized%20Use-red.svg)
-![Encryption](https://img.shields.io/badge/encryption-AES--256-green.svg)
-
-**Military-grade encryption for your sensitive documents** 🛡️
-
----
-
-## 📋 Table of Contents
-
-- [What's New](#whats-new)
-- [Features](#features)
-- [Quick Start](#quick-start)
-- [Installation & Setup](#installation--setup)
-- [How It Works](#how-it-works)
-- [Security Notes](#security-notes)
-- [Troubleshooting](#troubleshooting)
-- [Folder Structure](#folder-structure)
-- [Version History](#version-history)
+![Encryption](https://img.shields.io/badge/encryption-AES--256-success.svg?logo=security)
+![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)
 
 ---
 
-## 🎉 What's New
+## 📖 Documentation
 
-### Version 1.0.5 - Latest Release
-
-- 🔇 **Cleaner Output** - Suppressed library check messages when already installed
-- ✨ **Better UX** - Only shows messages when action is needed
-- 🎨 **Visual Enhancement** - Added ASCII banner display at startup
-- ⚡ **Optimized** - Removed redundant success messages
+- [Quick Start Guide](#-quick-start)
+- [Installation Instructions](#-installation)
+- [Features & Capabilities](#-features)
+- [Security Architecture](#-security-architecture)
+- [Troubleshooting](#-troubleshooting)
 
 ---
 
-## ✨ Features
+## 🎯 What is PDF Password Protection Tool?
 
-| Feature | Description |
-|---------|-------------|
-| 🔒 **AES-256 Encryption** | Military-grade encryption for maximum security |
-| ⚡ **Drag & Drop** | Simple interface - no command line needed |
-| 🎯 **Smart Naming** | Auto-generates: `OriginalName_YYYYMMDD.pdf` |
-| 🔐 **Dual Passwords** | Separate user and owner passwords |
-| 📅 **30-Day Retention** | Compliance-ready expiration tracking |
-| 🚀 **Fast Processing** | Quick encryption with minimal resources |
-| 📂 **Clean Organization** | Auto-organized folder structure |
-| ✅ **No Confirmation** | Type password once and go |
+PDF Password Protection Tool is a **command-line utility** for Windows that enables users to:
+
+✅ Encrypt PDF documents with **military-grade AES-256** encryption
+✅ Set **dual-password protection** (user & owner passwords)
+✅ Apply **granular permissions** (printing, copying, editing)
+✅ Maintain **data retention compliance** with 30-day expiration tracking
+✅ Automate secure PDF workflows with **drag-and-drop** or batch processing
+
+**Use Cases:**
+- Legal document protection
+- Healthcare data compliance (HIPAA)
+- Financial records encryption
+- Confidential business communications
+- Academic research data security
 
 ---
 
 ## 🚀 Quick Start
 
-### 🎯 Method 1: Drag & Drop (Recommended)
-
-1. 📄 Find your unprotected PDF file
-2. 🖱️ Drag the PDF onto **Protect-PDF.bat**
-3. 🔑 Enter your password (visible, no confirmation)
-4. 🔓 Optionally set different owner password
-5. ✅ Done! Find encrypted PDF in OUTPUT folder
-
-### 💻 Method 2: Double-Click
-
-1. 🖱️ Double-click **Protect-PDF.bat**
-2. 📝 Type the PDF file path
-3. 🔑 Enter your password
-4. ✅ Encrypted PDF created in OUTPUT folder
-
-**⚡ Super Fast** • **🔒 100% Secure** • **📦 Self-Contained**
-
----
-
-## ⚙️ Installation & Setup
-
-### 📋 System Requirements
-
-| Component | Requirement |
-|-----------|-------------|
-| 🖥️ **OS** | Windows 10 or above |
-| 🐍 **Python** | Version 3.8+ |
-| 💾 **Disk Space** | ~50MB |
-| 🧠 **RAM** | 512MB minimum |
-
-### 🐍 Python Installation
-
-> ✅ **Good News:** Auto-installation available on Windows 10+!
-
-#### Option 1: Auto-Install (Recommended)
-
-Open **PowerShell as Administrator** and run:
-
-```powershell
-winget install Python.Python.3.12
-```
-
-*Uses Windows Package Manager for automatic installation*
-
-#### Option 2: Manual Installation
-
-1. Visit [python.org/downloads](https://www.python.org/downloads/)
-2. Click **"Download Python"** button
-3. Run the installer
-4. ⚠️ **IMPORTANT:** Check **"Add Python to PATH"**
-5. Click **"Install Now"**
-6. Wait 2-3 minutes
-7. Verify installation:
+### Drag & Drop Method (Recommended)
 
 ```bash
-python --version
+# Simply drag your PDF file onto Protect-PDF.bat
+# Enter password when prompted
+# Encrypted file appears in OUTPUT/ folder
 ```
 
-### 📦 First Run
+### Command-Line Method
 
-> 🎯 **Auto-Setup:** PyMuPDF library installs automatically on first run!
+```bash
+# Double-click Protect-PDF.bat
+# Provide file path: C:\Documents\sensitive.pdf
+# Set password: ********
+# Output: OUTPUT/sensitive_20251026.pdf
+```
+
+### First-Time Setup
+
+```powershell
+# Install Python (if not already installed)
+winget install Python.Python.3.12
+
+# PyMuPDF library auto-installs on first run
+```
 
 ---
 
-## 📖 How It Works
+## ✨ Features
 
-### 📁 Output File Format
+| Capability | Description | Status |
+|------------|-------------|--------|
+| **AES-256 Encryption** | Industry-standard encryption used by governments | ✅ |
+| **Dual Passwords** | Separate user (view) and owner (edit) passwords | ✅ |
+| **Permission Control** | Granular settings for print, copy, modify, annotate | ✅ |
+| **Smart File Naming** | Auto-generates timestamped files (YYYYMMDD) | ✅ |
+| **No Password Confirmation** | Single-entry workflow for speed | ✅ |
+| **30-Day Retention** | Compliance-ready expiration tracking | ✅ |
+| **Batch Processing** | Process multiple files sequentially | ✅ |
+| **Zero Configuration** | Auto-installs dependencies on first run | ✅ |
 
-```
-Input:  Document.pdf
-Output: OUTPUT/Document_20251024.pdf
-```
+---
 
-**Multiple files same day:**
-```
-OUTPUT/Document_20251024.pdf
-OUTPUT/Document_20251024_1.pdf
-OUTPUT/Document_20251024_2.pdf
-```
-
-> 💡 **Note:** Original files remain untouched. New encrypted copies are created in **OUTPUT** folder.
-
-### 🔐 Encryption Settings
-
-| Setting | Details |
-|---------|---------|
-| 🔒 **Encryption** | AES-256 (Military-grade) |
-| 👤 **User Password** | Opens & views PDF (high-quality printing) |
-| 👑 **Owner Password** | Full access (copy, modify, annotate) |
-| 📜 **Permissions** | High-quality printing for all users |
-
-### 🔑 Password Setup
-
-> ⚡ **Fast & Simple:** No password confirmation required!
-
-**Recommended strength:**
-- ✅ Minimum 8 characters
-- ✅ Uppercase + lowercase letters
-- ✅ Numbers + special characters
-
-### 👤 User vs 👑 Owner Password
-
-| Password Type | Access Level |
-|---------------|--------------|
-| **Same password** (default) | Full access to view, print, copy, modify |
-| **Different passwords** | User: view-only • Owner: full editing rights |
-
-> ⚠️ **Owner Password:** Must be 12+ characters and different from user password
-
-### 📊 Permission Comparison
+## 📊 Permission Matrix
 
 | Action | 👤 User Password | 👑 Owner Password |
 |--------|:----------------:|:-----------------:|
@@ -172,140 +94,232 @@ OUTPUT/Document_20251024_2.pdf
 | Copy Text/Images | ❌ | ✅ |
 | Modify Content | ❌ | ✅ |
 | Add Annotations | ❌ | ✅ |
+| Fill Forms | ❌ | ✅ |
 
 ---
 
-## 🛡️ Security Notes
+## 🔧 Installation
 
-### ⚠️ Important Security Information
+### System Requirements
 
-- 👁️ **Password Visibility:** Passwords display on screen when typing
-- 📄 **Original Files:** Remain unchanged - encrypted copy created
-- 🔐 **AES-256:** Same encryption used by governments and military
-- 🔑 **Password Recovery:** Impossible if forgotten - keep it safe!
-- 📅 **Expiration:** Files expire after 30 days (compliance)
+| Component | Minimum | Recommended |
+|-----------|---------|-------------|
+| **OS** | Windows 10 (64-bit) | Windows 11 |
+| **Python** | 3.8+ | 3.12+ |
+| **RAM** | 512MB | 1GB |
+| **Storage** | 50MB | 100MB |
+
+### Option 1: Automated Installation (Windows 10+)
+
+```powershell
+# Open PowerShell as Administrator
+winget install Python.Python.3.12
+
+# Verify installation
+python --version
+```
+
+### Option 2: Manual Installation
+
+1. Download Python from [python.org](https://www.python.org/downloads/)
+2. Run installer
+3. ⚠️ **CRITICAL:** Check "Add Python to PATH"
+4. Complete installation
+5. Restart terminal
+
+### Dependency Management
+
+```powershell
+# Manual dependency installation (if needed)
+pip install PyMuPDF
+
+# Verify installation
+python -c "import fitz; print(fitz.__doc__)"
+```
+
+---
+
+## 🛡️ Security Architecture
+
+### Encryption Specifications
+
+| Parameter | Configuration |
+|-----------|---------------|
+| **Algorithm** | AES-256-CBC |
+| **Key Derivation** | PBKDF2 (Password-Based Key Derivation Function 2) |
+| **Permission Encoding** | PDF Standard Security Handler Revision 6 |
+| **Metadata Protection** | Encrypted |
+
+### Password Policy
+
+**User Password (Minimum Requirements):**
+- ✅ 8+ characters
+- ✅ Mixed case letters
+- ✅ Numeric digits
+- ✅ Special characters
+
+**Owner Password (Enhanced Requirements):**
+- ✅ 12+ characters
+- ✅ Must differ from user password
+- ✅ Grants full document access
+
+> ⚠️ **Security Notice:** Passwords are displayed during input. Ensure no visual surveillance when entering credentials.
+
+### Data Handling
+
+- **Original Files:** Remain unmodified
+- **Output Location:** `OUTPUT/` directory (auto-created)
+- **Naming Convention:** `{original_name}_{YYYYMMDD}.pdf`
+- **Collision Handling:** Appends `_1`, `_2`, etc.
+
+---
+
+## 📁 Project Structure
+
+```
+pdf-password/
+│
+├── Protect-PDF.bat                # Main executable
+├── README.md                      # Documentation
+├── README.html                    # Styled documentation
+│
+├── scripts/
+│   ├── protect_pdf.py             # Encryption engine
+│   └── Protect-PDF-Simple.ps1     # PowerShell wrapper
+│
+└── OUTPUT/                        # Encrypted PDFs (auto-created)
+```
 
 ---
 
 ## 🔍 Troubleshooting
 
-### ❌ Error: "Python is not installed or not in PATH"
+### Common Issues
 
-**Solution:** Install Python using the [Installation & Setup](#installation--setup) section above.
-
-### ❌ Error: "PyMuPDF installation failed"
-
-**Solution:** Manually install via PowerShell:
-
-```powershell
-pip install PyMuPDF
-```
-
-### ❌ Script won't run - "running scripts is disabled"
-
-**Solution:** Open PowerShell as Administrator:
-
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-
-### ❌ PDF file not found
+<details>
+<summary><b>Error: "Python is not installed or not in PATH"</b></summary>
 
 **Solution:**
-- ✅ Verify file path is correct
-- ✅ Ensure file exists
-- ✅ Use drag-and-drop to avoid typos
+```powershell
+# Verify Python installation
+python --version
+
+# If not found, reinstall with PATH option checked
+winget install Python.Python.3.12
+```
+</details>
+
+<details>
+<summary><b>Error: "PyMuPDF installation failed"</b></summary>
+
+**Solution:**
+```powershell
+# Manual installation
+pip install --upgrade pip
+pip install PyMuPDF
+
+# Alternative: Use conda
+conda install -c conda-forge pymupdf
+```
+</details>
+
+<details>
+<summary><b>Script won't run - "execution policy" error</b></summary>
+
+**Solution:**
+```powershell
+# Open PowerShell as Administrator
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# Verify change
+Get-ExecutionPolicy
+```
+</details>
+
+<details>
+<summary><b>PDF output is corrupted</b></summary>
+
+**Solution:**
+- Ensure input PDF is not already encrypted
+- Verify sufficient disk space
+- Try re-running with a different output name
+- Check PyMuPDF version: `pip show PyMuPDF`
+</details>
 
 ---
 
-## 📁 Folder Structure
+## 📝 Changelog
 
-```
-pdf-password/
-│
-├── 📄 Protect-PDF.bat              ← Main executable (run this!)
-├── 📋 README.md                    ← This documentation
-├── 🌐 README.html                  ← HTML documentation
-│
-├── 📂 scripts/
-│   ├── 🐍 protect_pdf.py           ← Python encryption engine
-│   └── 💻 Protect-PDF-Simple.ps1   ← PowerShell wrapper
-│
-└── 📂 OUTPUT/                      ← Your encrypted PDFs save here
-```
+### Version 1.0.5 (2025-10-25)
 
-### 📝 File Descriptions
+- 🔇 **Cleaner Output** - Suppressed library check messages when already installed
+- ✨ **Better UX** - Only shows messages when action is needed
+- 🎨 **Visual Enhancement** - Added ASCII banner display at startup
+- ⚡ **Optimized** - Removed redundant success messages
 
-| File/Folder | Purpose |
-|-------------|---------|
-| `Protect-PDF.bat` | Main executable - drag & drop or double-click |
-| `scripts/` | Backend scripts (keeps root clean) |
-| `OUTPUT/` | Auto-created folder for encrypted PDFs |
-| `README.md` | Markdown documentation (this file) |
-| `README.html` | Styled HTML documentation |
-
----
-
-## 📜 Version History
-
-### 🎉 Version 1.0.5 (2025-10-25)
-
-- 🔇 Suppressed library check messages when already installed
-- ✨ Cleaner terminal output
-- 🎨 Added ASCII banner display
-- ⚡ Removed redundant success messages
-
-### 📦 Version 1.0.4 (2025-10-24)
+### Version 1.0.4 (2025-10-24)
 
 - ✨ Owner password grants full access (copy, modify, annotate)
 - 🖨️ High-quality printing permission for all users
 - 🔒 Owner password: 12+ chars, must differ from user password
-- ⚡ Removed password confirmation
+- ⚡ Removed password confirmation for faster workflow
 - 🎨 Fixed terminal box alignment
 - 📂 Organized folder structure
 - 🪟 Custom terminal window title
-- 🎯 Changed timestamp: HHMM → YYYYMMDD
+- 🎯 Changed timestamp format: HHMM → YYYYMMDD
+
+[View Full Changelog](CHANGELOG.md)
 
 ---
 
-## 📊 Statistics
+## 🤝 Contributing
 
-| Metric | Value |
-|--------|-------|
-| **Encryption** | AES-256 |
-| **Processing Speed** | < 1 second/PDF |
-| **Security Level** | Military-grade |
-| **Platform** | Windows 10+ |
-| **Dependencies** | Python 3.8+, PyMuPDF |
+We welcome contributions from the community! Here's how you can help:
 
----
-
-## 📞 Support & Information
-
-**📌 Project Info**
-- 📦 Version: 1.0.5
-- 🖥️ Platform: Windows 10+
-- 🎯 Purpose: Password-protect PDFs
-- 📁 Output: `OriginalName_YYYYMMDD.pdf`
-- 📂 Location: OUTPUT folder (auto-created)
-- 📅 Retention: 30 days from generation
-- 🔒 License: Authorized use only
+- 🐛 **Report Bugs** - Open an issue with detailed reproduction steps
+- 💡 **Suggest Features** - Share your ideas for improvements
+- 📖 **Improve Documentation** - Help us make guides clearer
+- 🔧 **Submit Pull Requests** - Follow our coding standards
 
 ---
 
 ## 📄 License
 
-**For authorized use only**
+**Authorized Use Only**
+
+This tool is provided for legitimate security and compliance purposes. Users are responsible for ensuring compliance with applicable laws and regulations.
 
 ---
+
+## 💬 Support
+
+For questions, issues, or feature requests:
+
+- 📧 **Email:** [Your Email]
+- 🐛 **Issues:** [GitHub Issues](https://github.com/yourusername/pdf-password/issues)
+- 📖 **Documentation:** [Full Documentation](README.html)
+
+---
+
+## 🌟 Acknowledgments
+
+Built with:
+- [PyMuPDF](https://pymupdf.readthedocs.io/) - High-performance PDF library
+- [Python](https://www.python.org/) - Programming language
+- [Windows PowerShell](https://docs.microsoft.com/powershell/) - Automation framework
+
+---
+
+<div align="center">
 
 ### 🔐 Protect your sensitive documents with military-grade encryption
 
-**Made with ❤️ for Windows**
-
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Security](https://img.shields.io/badge/Security-AES--256-success?style=for-the-badge&logo=security)
 
----
+**Made with ❤️ for Windows**
 
 ⭐ **Star this repo if you find it useful!** ⭐
+
+</div>
