@@ -1,5 +1,3 @@
-<div align="center">
-
 # 🔐 PDF Password Protection Tool
 
 ### Secure Your PDFs with AES-256 Encryption
@@ -12,31 +10,23 @@
 
 **Military-grade encryption for your sensitive documents** 🛡️
 
-[Features](#-features) • [Quick Start](#-quick-start) • [Installation](#%EF%B8%8F-installation--setup) • [Documentation](#-how-it-works) • [Troubleshooting](#-troubleshooting)
-
-</div>
-
 ---
 
 ## 📋 Table of Contents
 
-- [What's New](#-whats-new)
-- [Features](#-features)
-- [Quick Start](#-quick-start)
-- [Installation & Setup](#%EF%B8%8F-installation--setup)
-- [How It Works](#-how-it-works)
-- [Security Notes](#%EF%B8%8F-security-notes)
-- [Troubleshooting](#-troubleshooting)
-- [Folder Structure](#-folder-structure)
-- [Version History](#-version-history)
+- [🎉 What's New](#-whats-new)
+- [✨ Features](#-features)
+- [🚀 Quick Start](#-quick-start)
+- [⚙️ Installation & Setup](#%EF%B8%8F-installation--setup)
+- [📖 How It Works](#-how-it-works)
+- [🛡️ Security Notes](#%EF%B8%8F-security-notes)
+- [🔍 Troubleshooting](#-troubleshooting)
+- [📁 Folder Structure](#-folder-structure)
+- [📜 Version History](#-version-history)
 
 ---
 
 ## 🎉 What's New
-
-<table>
-<tr>
-<td>
 
 ### Version 1.0.5 - Latest Release
 
@@ -45,15 +35,9 @@
 - 🎨 **Visual Enhancement** - Added ASCII banner display at startup
 - ⚡ **Optimized** - Removed redundant success messages
 
-</td>
-</tr>
-</table>
-
 ---
 
 ## ✨ Features
-
-<div align="center">
 
 | Feature | Description |
 |---------|-------------|
@@ -66,36 +50,26 @@
 | 📂 **Clean Organization** | Auto-organized folder structure |
 | ✅ **No Confirmation** | Type password once and go |
 
-</div>
-
 ---
 
 ## 🚀 Quick Start
 
 ### 🎯 Method 1: Drag & Drop (Recommended)
 
-```
 1. 📄 Find your unprotected PDF file
-2. 🖱️ Drag the PDF onto Protect-PDF.bat
+2. 🖱️ Drag the PDF onto **Protect-PDF.bat**
 3. 🔑 Enter your password (visible, no confirmation)
 4. 🔓 Optionally set different owner password
 5. ✅ Done! Find encrypted PDF in OUTPUT folder
-```
 
 ### 💻 Method 2: Double-Click
 
-```
-1. 🖱️ Double-click Protect-PDF.bat
+1. 🖱️ Double-click **Protect-PDF.bat**
 2. 📝 Type the PDF file path
 3. 🔑 Enter your password
 4. ✅ Encrypted PDF created in OUTPUT folder
-```
-
-<div align="center">
 
 **⚡ Super Fast** • **🔒 100% Secure** • **📦 Self-Contained**
-
-</div>
 
 ---
 
@@ -114,10 +88,7 @@
 
 > ✅ **Good News:** Auto-installation available on Windows 10+!
 
-<details>
-<summary><b>🔽 Option 1: Auto-Install (Recommended)</b></summary>
-
-<br>
+#### 🔽 Option 1: Auto-Install (Recommended)
 
 Open **PowerShell as Administrator** and run:
 
@@ -127,12 +98,7 @@ winget install Python.Python.3.12
 
 *Uses Windows Package Manager for automatic installation*
 
-</details>
-
-<details>
-<summary><b>🔽 Option 2: Manual Installation</b></summary>
-
-<br>
+#### 🔽 Option 2: Manual Installation
 
 1. Visit [python.org/downloads](https://www.python.org/downloads/)
 2. Click **"Download Python"** button
@@ -145,8 +111,6 @@ winget install Python.Python.3.12
 ```bash
 python --version
 ```
-
-</details>
 
 ### 📦 First Run
 
@@ -174,28 +138,12 @@ OUTPUT/Document_20251024_2.pdf
 
 ### 🔐 Encryption Settings
 
-<table>
-<tr>
-<th>Setting</th>
-<th>Details</th>
-</tr>
-<tr>
-<td><b>🔒 Encryption</b></td>
-<td>AES-256 (Military-grade)</td>
-</tr>
-<tr>
-<td><b>👤 User Password</b></td>
-<td>Opens & views PDF (high-quality printing)</td>
-</tr>
-<tr>
-<td><b>👑 Owner Password</b></td>
-<td>Full access (copy, modify, annotate)</td>
-</tr>
-<tr>
-<td><b>📜 Permissions</b></td>
-<td>High-quality printing for all users</td>
-</tr>
-</table>
+| Setting | Details |
+|---------|---------|
+| 🔒 **Encryption** | AES-256 (Military-grade) |
+| 👤 **User Password** | Opens & views PDF (high-quality printing) |
+| 👑 **Owner Password** | Full access (copy, modify, annotate) |
+| 📜 **Permissions** | High-quality printing for all users |
 
 ### 🔑 Password Setup
 
@@ -217,8 +165,6 @@ OUTPUT/Document_20251024_2.pdf
 
 ### 📊 Permission Comparison
 
-<div align="center">
-
 | Action | 👤 User Password | 👑 Owner Password |
 |--------|:----------------:|:-----------------:|
 | Open & View PDF | ✅ | ✅ |
@@ -227,15 +173,9 @@ OUTPUT/Document_20251024_2.pdf
 | Modify Content | ❌ | ✅ |
 | Add Annotations | ❌ | ✅ |
 
-</div>
-
 ---
 
 ## 🛡️ Security Notes
-
-<table>
-<tr>
-<td>
 
 ### ⚠️ Important Security Information
 
@@ -245,27 +185,15 @@ OUTPUT/Document_20251024_2.pdf
 - 🔑 **Password Recovery:** Impossible if forgotten - keep it safe!
 - 📅 **Expiration:** Files expire after 30 days (compliance)
 
-</td>
-</tr>
-</table>
-
 ---
 
 ## 🔍 Troubleshooting
 
-<details>
-<summary><b>❌ Error: "Python is not installed or not in PATH"</b></summary>
-
-<br>
+### ❌ Error: "Python is not installed or not in PATH"
 
 **Solution:** Install Python using the [Installation & Setup](#%EF%B8%8F-installation--setup) section above.
 
-</details>
-
-<details>
-<summary><b>❌ Error: "PyMuPDF installation failed"</b></summary>
-
-<br>
+### ❌ Error: "PyMuPDF installation failed"
 
 **Solution:** Manually install via PowerShell:
 
@@ -273,12 +201,7 @@ OUTPUT/Document_20251024_2.pdf
 pip install PyMuPDF
 ```
 
-</details>
-
-<details>
-<summary><b>❌ Script won't run - "running scripts is disabled"</b></summary>
-
-<br>
+### ❌ Script won't run - "running scripts is disabled"
 
 **Solution:** Open PowerShell as Administrator:
 
@@ -286,19 +209,12 @@ pip install PyMuPDF
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-</details>
-
-<details>
-<summary><b>❌ PDF file not found</b></summary>
-
-<br>
+### ❌ PDF file not found
 
 **Solution:**
 - ✅ Verify file path is correct
 - ✅ Ensure file exists
 - ✅ Use drag-and-drop to avoid typos
-
-</details>
 
 ---
 
@@ -339,12 +255,7 @@ pdf-password/
 - 🎨 Added ASCII banner display
 - ⚡ Removed redundant success messages
 
-<details>
-<summary><b>🔽 Previous Versions</b></summary>
-
-<br>
-
-### Version 1.0.4 (2025-10-24)
+### 📦 Version 1.0.4 (2025-10-24)
 
 - ✨ Owner password grants full access (copy, modify, annotate)
 - 🖨️ High-quality printing permission for all users
@@ -355,13 +266,9 @@ pdf-password/
 - 🪟 Custom terminal window title
 - 🎯 Changed timestamp: HHMM → YYYYMMDD
 
-</details>
-
 ---
 
 ## 📊 Statistics
-
-<div align="center">
 
 | Metric | Value |
 |--------|-------|
@@ -371,15 +278,9 @@ pdf-password/
 | **Platform** | Windows 10+ |
 | **Dependencies** | Python 3.8+, PyMuPDF |
 
-</div>
-
 ---
 
 ## 📞 Support & Information
-
-<table>
-<tr>
-<td>
 
 **📌 Project Info**
 - 📦 Version: 1.0.5
@@ -390,10 +291,6 @@ pdf-password/
 - 📅 Retention: 30 days from generation
 - 🔒 License: Authorized use only
 
-</td>
-</tr>
-</table>
-
 ---
 
 ## 📄 License
@@ -401,8 +298,6 @@ pdf-password/
 **For authorized use only**
 
 ---
-
-<div align="center">
 
 ### 🔐 Protect your sensitive documents with military-grade encryption
 
@@ -414,5 +309,3 @@ pdf-password/
 ---
 
 ⭐ **Star this repo if you find it useful!** ⭐
-
-</div>
