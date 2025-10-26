@@ -1,7 +1,6 @@
 # PDF Password Protection Tool
-
 <h1 align="center">
-  <img src="https://img.icons8.com/color/200/000000/pdf-2.png" alt="pdf-password-protection" width="200px">
+    <img src="img/logo.png" alt="OS Detector Logo" width="auto" height="auto"alt="pdf-password-protection">
   <br>
 </h1>
 
