@@ -229,15 +229,17 @@
         </div>
 
         <div class="content">
-            <!-- What's New Alert -->
-            <div class="alert alert-success" style="margin-bottom: 30px;">
-                <strong>🎉 What's New in v1.0.5:</strong> Cleaner terminal output! Library check messages are now suppressed when already installed. The tool jumps straight into the ASCII banner and gets to work faster.
-            </div>
 
             <!-- Quick Start Section -->
             <div class="section">
-                <h2>🚀 Quick Start</h2>
-                <span class="badge success">Easiest Method</span>
+                <h2>🚀 Quick Start - Zero Configuration Required!</h2>
+                <div class="alert alert-success" style="margin-top: 20px; margin-bottom: 30px;">
+                    <strong>🎯 Just run Protect-PDF.bat - that's it!</strong><br>
+                    The tool automatically install all dependencies and requirements on first run.<br>
+                    No Manual Setup Needed!
+                </div>
+
+                <h3>How to Use</h3>
 
                 <div class="method-box">
                     <h4>Method 1: Drag & Drop (Recommended)</h4>
@@ -259,51 +261,38 @@
                         <li>Your encrypted PDF will be created in the OUTPUT folder</li>
                     </ol>
                 </div>
-            </div>
 
-            <!-- Installation Section -->
-            <div class="section">
-                <h2>⚙️ Installation & Setup</h2>
-                <span class="badge info">One-Time Setup</span>
+                <h3>What Happens on First Run?</h3>
+
+                <div class="method-box">
+                    <h4>First Time - Automatic Setup (~30 seconds)</h4>
+                    <ol class="steps">
+                        <li>Tool automatically detects and installs all required dependencies</li>
+                        <li>Python and PyMuPDF are installed if not already present</li>
+                        <li>Enter your password and start encrypting immediately!</li>
+                    </ol>
+                </div>
+
+                <div class="method-box">
+                    <h4>All Subsequent Runs - Instant Encryption</h4>
+                    <ol class="steps">
+                        <li>No installation messages</li>
+                        <li>No waiting</li>
+                        <li>Just password and encrypt!</li>
+                    </ol>
+                </div>
+
+                <div class="alert alert-info">
+                    <strong>💡 Note:</strong> The tool automatically installs Python and PyMuPDF if not already present. Zero manual setup required!
+                </div>
 
                 <h3>System Requirements</h3>
                 <ul class="bullet-list">
                     <li><strong>Operating System:</strong> Windows 10 or above</li>
-                    <li><strong>Python:</strong> Version 3.8 or higher (auto-installable on Windows 10+)</li>
+                    <li><strong>Python:</strong> Version 3.8 or higher (auto-installed if missing)</li>
                     <li><strong>Disk Space:</strong> ~50MB for Python and libraries</li>
                     <li><strong>RAM:</strong> 512MB minimum</li>
                 </ul>
-
-                <div class="alert alert-info">
-                    <strong>✅ Good News:</strong> The script can automatically install Python on Windows 10 and above using Windows Package Manager (winget).
-                </div>
-
-                <h3>Requirements</h3>
-                <p>This tool requires <strong>Python</strong> to be installed on your system.</p>
-
-                <div class="alert alert-warning">
-                    <strong>⚠️ Important:</strong> If you get an error saying "Python is not installed or not in PATH", follow the installation steps below.
-                </div>
-
-                <h3>Option 1: Auto-Install Python (Windows 10/11)</h3>
-                <p>Open PowerShell as Administrator and run:</p>
-                <div class="code-block">winget install Python.Python.3.12</div>
-                <p><em>This uses Windows Package Manager to automatically install Python.</em></p>
-
-                <h3>Option 2: Manual Python Installation</h3>
-                <ol class="steps">
-                    <li>Visit <a href="https://www.python.org/downloads/" target="_blank">python.org/downloads</a></li>
-                    <li>Click the yellow "Download Python" button</li>
-                    <li>Run the downloaded installer</li>
-                    <li><strong>⚠️ IMPORTANT:</strong> Check the box "Add Python to PATH" at the bottom</li>
-                    <li>Click "Install Now" and wait 2-3 minutes</li>
-                    <li>Close and reopen PowerShell</li>
-                    <li>Verify by running: <code style="background: #ecf0f1; padding: 2px 6px; border-radius: 3px;">python --version</code></li>
-                </ol>
-
-                <div class="alert alert-success">
-                    <strong>✅ First Run:</strong> When you run the tool for the first time, it will automatically install the required PyMuPDF library.
-                </div>
             </div>
 
             <!-- Features Section -->
