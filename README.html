@@ -1,23 +1,32 @@
-# PDF Password Protection Tool
+<p align="center">
+  <img src="https://img.icons8.com/fluency/200/000000/pdf-2.png" alt="PDF Password Protection Tool"/>
+</p>
 
-> A lightweight Windows utility for securing PDF documents with AES-256 encryption. Designed for compliance, privacy, and data protection workflows.
+<h1 align="center">PDF Password Protection Tool</h1>
 
-![Version](https://img.shields.io/badge/version-1.0.5-blue.svg)
-![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-0078D6.svg?logo=windows)
-![Python](https://img.shields.io/badge/python-3.8%2B-3776AB.svg?logo=python&logoColor=white)
-![License](https://img.shields.io/badge/license-Authorized%20Use-red.svg)
-![Encryption](https://img.shields.io/badge/encryption-AES--256-success.svg?logo=security)
-![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)
+<p align="center">
+  <b>A lightweight Windows utility for securing PDF documents with AES-256 encryption</b>
+  <br>
+  Designed for compliance, privacy, and data protection workflows
+</p>
 
----
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.5-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/platform-Windows%2010%2B-0078D6.svg?logo=windows" alt="Platform">
+  <img src="https://img.shields.io/badge/python-3.8%2B-3776AB.svg?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/license-Authorized%20Use-red.svg" alt="License">
+  <img src="https://img.shields.io/badge/encryption-AES--256-success.svg?logo=lock" alt="Encryption">
+  <img src="https://img.shields.io/badge/maintained-yes-green.svg" alt="Maintained">
+</p>
 
-## 📖 Documentation
-
-- [Quick Start Guide](#-quick-start)
-- [Installation Instructions](#-installation)
-- [Features & Capabilities](#-features)
-- [Security Architecture](#-security-architecture)
-- [Troubleshooting](#-troubleshooting)
+<p align="center">
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-security-architecture">Security</a> •
+  <a href="#-troubleshooting">Troubleshooting</a> •
+  <a href="#-changelog">Changelog</a>
+</p>
 
 ---
 
@@ -25,24 +34,35 @@
 
 PDF Password Protection Tool is a **command-line utility** for Windows that enables users to:
 
-✅ Encrypt PDF documents with **military-grade AES-256** encryption
-✅ Set **dual-password protection** (user & owner passwords)
-✅ Apply **granular permissions** (printing, copying, editing)
-✅ Maintain **data retention compliance** with 30-day expiration tracking
-✅ Automate secure PDF workflows with **drag-and-drop** or batch processing
+<table>
+<tr>
+<td>
 
-**Use Cases:**
-- Legal document protection
-- Healthcare data compliance (HIPAA)
-- Financial records encryption
-- Confidential business communications
-- Academic research data security
+- 🔐 Encrypt PDF documents with **military-grade AES-256** encryption
+- 👥 Set **dual-password protection** (user & owner passwords)
+- 🛡️ Apply **granular permissions** (printing, copying, editing)
+- 📋 Maintain **data retention compliance** with 30-day expiration tracking
+- ⚡ Automate secure PDF workflows with **drag-and-drop** or batch processing
+
+</td>
+</tr>
+</table>
+
+### 💼 Use Cases
+
+| Industry | Application |
+|----------|-------------|
+| ⚖️ **Legal** | Contract protection, case file encryption |
+| 🏥 **Healthcare** | HIPAA compliance, patient record security |
+| 💰 **Financial** | Sensitive document encryption, audit trails |
+| 🏢 **Business** | Confidential communications, IP protection |
+| 🎓 **Academic** | Research data security, thesis protection |
 
 ---
 
 ## 🚀 Quick Start
 
-### Drag & Drop Method (Recommended)
+### Method 1: Drag & Drop (Recommended)
 
 ```bash
 # Simply drag your PDF file onto Protect-PDF.bat
@@ -50,7 +70,7 @@ PDF Password Protection Tool is a **command-line utility** for Windows that enab
 # Encrypted file appears in OUTPUT/ folder
 ```
 
-### Command-Line Method
+### Method 2: Command-Line
 
 ```bash
 # Double-click Protect-PDF.bat
@@ -72,29 +92,95 @@ winget install Python.Python.3.12
 
 ## ✨ Features
 
-| Capability | Description | Status |
-|------------|-------------|--------|
-| **AES-256 Encryption** | Industry-standard encryption used by governments | ✅ |
-| **Dual Passwords** | Separate user (view) and owner (edit) passwords | ✅ |
-| **Permission Control** | Granular settings for print, copy, modify, annotate | ✅ |
-| **Smart File Naming** | Auto-generates timestamped files (YYYYMMDD) | ✅ |
-| **No Password Confirmation** | Single-entry workflow for speed | ✅ |
-| **30-Day Retention** | Compliance-ready expiration tracking | ✅ |
-| **Batch Processing** | Process multiple files sequentially | ✅ |
-| **Zero Configuration** | Auto-installs dependencies on first run | ✅ |
+<table>
+<tr>
+<th>Capability</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>🔒 <b>AES-256 Encryption</b></td>
+<td>Industry-standard encryption used by governments</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>🔐 <b>Dual Passwords</b></td>
+<td>Separate user (view) and owner (edit) passwords</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>🎯 <b>Permission Control</b></td>
+<td>Granular settings for print, copy, modify, annotate</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>📅 <b>Smart File Naming</b></td>
+<td>Auto-generates timestamped files (YYYYMMDD)</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>⚡ <b>No Confirmation</b></td>
+<td>Single-entry workflow for speed</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>📋 <b>30-Day Retention</b></td>
+<td>Compliance-ready expiration tracking</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>🔄 <b>Batch Processing</b></td>
+<td>Process multiple files sequentially</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>🛠️ <b>Zero Configuration</b></td>
+<td>Auto-installs dependencies on first run</td>
+<td>✅</td>
+</tr>
+</table>
 
 ---
 
 ## 📊 Permission Matrix
 
-| Action | 👤 User Password | 👑 Owner Password |
-|--------|:----------------:|:-----------------:|
-| Open & View PDF | ✅ | ✅ |
-| Print (High-Quality) | ✅ | ✅ |
-| Copy Text/Images | ❌ | ✅ |
-| Modify Content | ❌ | ✅ |
-| Add Annotations | ❌ | ✅ |
-| Fill Forms | ❌ | ✅ |
+<table align="center">
+<tr>
+<th>Action</th>
+<th>👤 User Password</th>
+<th>👑 Owner Password</th>
+</tr>
+<tr>
+<td>Open & View PDF</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td>Print (High-Quality)</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td>Copy Text/Images</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td>Modify Content</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td>Add Annotations</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td>Fill Forms</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+</table>
 
 ---
 
@@ -102,12 +188,33 @@ winget install Python.Python.3.12
 
 ### System Requirements
 
-| Component | Minimum | Recommended |
-|-----------|---------|-------------|
-| **OS** | Windows 10 (64-bit) | Windows 11 |
-| **Python** | 3.8+ | 3.12+ |
-| **RAM** | 512MB | 1GB |
-| **Storage** | 50MB | 100MB |
+<table>
+<tr>
+<th>Component</th>
+<th>Minimum</th>
+<th>Recommended</th>
+</tr>
+<tr>
+<td><b>Operating System</b></td>
+<td>Windows 10 (64-bit)</td>
+<td>Windows 11</td>
+</tr>
+<tr>
+<td><b>Python</b></td>
+<td>3.8+</td>
+<td>3.12+</td>
+</tr>
+<tr>
+<td><b>RAM</b></td>
+<td>512MB</td>
+<td>1GB</td>
+</tr>
+<tr>
+<td><b>Storage</b></td>
+<td>50MB</td>
+<td>100MB</td>
+</tr>
+</table>
 
 ### Option 1: Automated Installation (Windows 10+)
 
@@ -143,12 +250,28 @@ python -c "import fitz; print(fitz.__doc__)"
 
 ### Encryption Specifications
 
-| Parameter | Configuration |
-|-----------|---------------|
-| **Algorithm** | AES-256-CBC |
-| **Key Derivation** | PBKDF2 (Password-Based Key Derivation Function 2) |
-| **Permission Encoding** | PDF Standard Security Handler Revision 6 |
-| **Metadata Protection** | Encrypted |
+<table>
+<tr>
+<th>Parameter</th>
+<th>Configuration</th>
+</tr>
+<tr>
+<td><b>Algorithm</b></td>
+<td>AES-256-CBC</td>
+</tr>
+<tr>
+<td><b>Key Derivation</b></td>
+<td>PBKDF2 (Password-Based Key Derivation Function 2)</td>
+</tr>
+<tr>
+<td><b>Permission Encoding</b></td>
+<td>PDF Standard Security Handler Revision 6</td>
+</tr>
+<tr>
+<td><b>Metadata Protection</b></td>
+<td>Encrypted</td>
+</tr>
+</table>
 
 ### Password Policy
 
@@ -194,10 +317,10 @@ pdf-password/
 
 ## 🔍 Troubleshooting
 
-### Common Issues
-
 <details>
-<summary><b>Error: "Python is not installed or not in PATH"</b></summary>
+<summary><b>❌ Error: "Python is not installed or not in PATH"</b></summary>
+
+<br>
 
 **Solution:**
 ```powershell
@@ -210,7 +333,9 @@ winget install Python.Python.3.12
 </details>
 
 <details>
-<summary><b>Error: "PyMuPDF installation failed"</b></summary>
+<summary><b>❌ Error: "PyMuPDF installation failed"</b></summary>
+
+<br>
 
 **Solution:**
 ```powershell
@@ -224,7 +349,9 @@ conda install -c conda-forge pymupdf
 </details>
 
 <details>
-<summary><b>Script won't run - "execution policy" error</b></summary>
+<summary><b>❌ Script won't run - "execution policy" error</b></summary>
+
+<br>
 
 **Solution:**
 ```powershell
@@ -237,7 +364,9 @@ Get-ExecutionPolicy
 </details>
 
 <details>
-<summary><b>PDF output is corrupted</b></summary>
+<summary><b>❌ PDF output is corrupted</b></summary>
+
+<br>
 
 **Solution:**
 - Ensure input PDF is not already encrypted
@@ -268,7 +397,7 @@ Get-ExecutionPolicy
 - 🪟 Custom terminal window title
 - 🎯 Changed timestamp format: HHMM → YYYYMMDD
 
-[View Full Changelog](CHANGELOG.md)
+<p align="right"><a href="CHANGELOG.md">View Full Changelog →</a></p>
 
 ---
 
@@ -276,10 +405,14 @@ Get-ExecutionPolicy
 
 We welcome contributions from the community! Here's how you can help:
 
-- 🐛 **Report Bugs** - Open an issue with detailed reproduction steps
-- 💡 **Suggest Features** - Share your ideas for improvements
-- 📖 **Improve Documentation** - Help us make guides clearer
-- 🔧 **Submit Pull Requests** - Follow our coding standards
+<table>
+<tr>
+<td align="center">🐛<br><b>Report Bugs</b><br>Open an issue with detailed reproduction steps</td>
+<td align="center">💡<br><b>Suggest Features</b><br>Share your ideas for improvements</td>
+<td align="center">📖<br><b>Improve Docs</b><br>Help us make guides clearer</td>
+<td align="center">🔧<br><b>Submit PRs</b><br>Follow our coding standards</td>
+</tr>
+</table>
 
 ---
 
@@ -293,33 +426,74 @@ This tool is provided for legitimate security and compliance purposes. Users are
 
 ## 💬 Support
 
+<table>
+<tr>
+<td>
+
+**Need Help?**
+
 For questions, issues, or feature requests:
 
 - 📧 **Email:** [Your Email]
-- 🐛 **Issues:** [GitHub Issues](https://github.com/yourusername/pdf-password/issues)
+- 🐛 **Issues:** [GitHub Issues](https://github.com/frustrat3d-aud1t0r/Protect-PDF/issues)
 - 📖 **Documentation:** [Full Documentation](README.html)
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🌟 Acknowledgments
 
-Built with:
-- [PyMuPDF](https://pymupdf.readthedocs.io/) - High-performance PDF library
-- [Python](https://www.python.org/) - Programming language
-- [Windows PowerShell](https://docs.microsoft.com/powershell/) - Automation framework
+Built with these amazing technologies:
+
+<table>
+<tr>
+<td align="center">
+<a href="https://pymupdf.readthedocs.io/">
+<img src="https://img.shields.io/badge/PyMuPDF-Library-blue?style=for-the-badge" alt="PyMuPDF"/><br>
+<b>PyMuPDF</b>
+</a><br>
+High-performance PDF library
+</td>
+<td align="center">
+<a href="https://www.python.org/">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/><br>
+<b>Python</b>
+</a><br>
+Programming language
+</td>
+<td align="center">
+<a href="https://docs.microsoft.com/powershell/">
+<img src="https://img.shields.io/badge/PowerShell-0078D6?style=for-the-badge&logo=powershell&logoColor=white" alt="PowerShell"/><br>
+<b>PowerShell</b>
+</a><br>
+Automation framework
+</td>
+</tr>
+</table>
 
 ---
 
-<div align="center">
+<p align="center">
+  <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Security-AES--256-success?style=for-the-badge&logo=security" alt="Security">
+</p>
 
-### 🔐 Protect your sensitive documents with military-grade encryption
+<h3 align="center">🔐 Protect your sensitive documents with military-grade encryption</h3>
 
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Security](https://img.shields.io/badge/Security-AES--256-success?style=for-the-badge&logo=security)
+<p align="center">
+  <b>Made with ❤️ for Windows</b>
+</p>
 
-**Made with ❤️ for Windows**
+<p align="center">
+  ⭐ <b>Star this repo if you find it useful!</b> ⭐
+</p>
 
-⭐ **Star this repo if you find it useful!** ⭐
+---
 
-</div>
+<p align="center">
+  <sub>© 2025 PDF Password Protection Tool | AES-256 Encryption</sub>
+</p>
