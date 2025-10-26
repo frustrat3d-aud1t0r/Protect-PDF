@@ -33,12 +33,11 @@ PDF Password Protection Tool is a specialized Windows utility designed to automa
 </h1>
 
 - 🔒 **Military-Grade Encryption** - AES-256-CBC cryptographic protection for maximum document security
-- **Dual Password Protection** - Separate user (view) and owner (full access) password capabilities
+- ⭐ **Dual Password Protection** - Separate user (view) and owner (full access) password capabilities
 - 🛡️ **Granular Permissions** - Fine-grained control over printing, copying, editing, and annotation rights
 - 📅 **Compliance Tracking** - 30-day retention monitoring for data protection regulations
 - ⚡ **Drag-and-Drop Interface** - Zero-command-line workflow for rapid encryption
 - 🎯 **Smart File Naming** - Automated timestamped output (YYYYMMDD) with collision prevention
-- 🔄 **Batch Processing** - Sequential multi-file encryption capabilities
 - 🛠️ **Zero Configuration** - Automatic dependency installation on first run
 
 ## Permission Matrix
@@ -49,21 +48,25 @@ PDF Password Protection Tool is a specialized Windows utility designed to automa
 | **Owner Password** | Full Access (Copy, Modify, Annotate, Fill Forms) | Internal document management and editing |
 | **No Password** | Restricted Access (Cannot open) | Maximum security for sensitive files |
 
-# 📦 Install PDF Password Protection Tool
+# 📦 Quick Start - Zero Configuration Required!
 
-PDF Password Protection Tool requires **Python 3.8+** to install successfully. Follow these steps:
+**Just run Protect-PDF.bat - that's it!**
+
+The tool automatically handles all dependencies and requirements on first run.
 
 ```bash
-# Option 1: Automated Installation (Windows 10+)
-winget install Python.Python.3.12
+# First time? No problem!
+> Double-click Protect-PDF.bat (or drag a PDF onto it)
+> Tool automatically detects and installs all required dependencies
+> Enter your password and start encrypting immediately!
 
-# Option 2: Manual Installation
-# Download from https://www.python.org/downloads/
-# ⚠️ CRITICAL: Check "Add Python to PATH" during installation
-
-# Verify installation
-python --version
+# All subsequent runs - instant encryption
+> No installation messages
+> No waiting
+> Just password and encrypt!
 ```
+
+> 🎯 **The tool automatically installs Python and PyMuPDF if not already present. Zero manual setup required!**
 
 ## For Security Teams
 
@@ -110,16 +113,6 @@ For security teams and compliance professionals, PDF Password Protection Tool pr
 # Set user password: ViewOnly123!
 # Set owner password: FullAccess456!@
 # Distribute user password to viewers, keep owner password for editors
-```
-
-### Batch Processing Example
-
-```bash
-# Process multiple files by running Protect-PDF.bat repeatedly
-# Or create a PowerShell script for automation:
-Get-ChildItem *.pdf | ForEach-Object {
-    # Call Protect-PDF.bat with each file
-}
 ```
 
 ## 📊 Encryption Specifications
