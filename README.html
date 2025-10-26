@@ -1,66 +1,84 @@
-<p align="center">
-  <img src="https://img.icons8.com/fluency/200/000000/pdf-2.png" alt="PDF Password Protection Tool"/>
-</p>
+# PDF Password Protection Tool
 
-<h1 align="center">PDF Password Protection Tool</h1>
-
-<p align="center">
-  <b>A lightweight Windows utility for securing PDF documents with AES-256 encryption</b>
+<h1 align="center">
+  <img src="https://img.icons8.com/color/200/000000/pdf-2.png" alt="pdf-password-protection" width="200px">
   <br>
-  Designed for compliance, privacy, and data protection workflows
+</h1>
+
+<h4 align="center">Lightweight Windows utility for securing PDF documents with AES-256 encryption</h4>
+
+<p align="center">
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-Authorized%20Use-red.svg"></a>
+<a href="https://github.com/frustrat3d-aud1t0r/Protect-PDF/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>
+<a href="https://github.com/frustrat3d-aud1t0r/Protect-PDF/releases"><img src="https://img.shields.io/github/release/frustrat3d-aud1t0r/Protect-PDF"></a>
+<a href="https://img.shields.io/badge/platform-Windows%2010%2B-0078D6.svg"><img src="https://img.shields.io/badge/platform-Windows%2010%2B-0078D6.svg?logo=windows"></a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.5-blue.svg" alt="Version">
-  <img src="https://img.shields.io/badge/platform-Windows%2010%2B-0078D6.svg?logo=windows" alt="Platform">
-  <img src="https://img.shields.io/badge/python-3.8%2B-3776AB.svg?logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/license-Authorized%20Use-red.svg" alt="License">
-  <img src="https://img.shields.io/badge/encryption-AES--256-success.svg?logo=lock" alt="Encryption">
-  <img src="https://img.shields.io/badge/maintained-yes-green.svg" alt="Maintained">
-</p>
-
-<p align="center">
-  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-install-pdf-password-protection-tool">Install</a> •
   <a href="#-features">Features</a> •
-  <a href="#-installation">Installation</a> •
-  <a href="#-security-architecture">Security</a> •
-  <a href="#-troubleshooting">Troubleshooting</a> •
-  <a href="#-changelog">Changelog</a>
+  <a href="#-running-the-tool">Usage</a> •
+  <a href="#-for-security-teams">For Security Teams</a> •
+  <a href="#-troubleshooting">Troubleshooting</a>
 </p>
 
 ---
 
-## 🎯 What is PDF Password Protection Tool?
+PDF Password Protection Tool is a specialized Windows utility designed to automate PDF encryption with military-grade AES-256 security. It focuses on providing dual-password protection, granular permission controls, and compliance-ready data retention tracking through an intuitive drag-and-drop interface and automated dependency management.
 
-PDF Password Protection Tool is a **command-line utility** for Windows that enables users to:
+# 🔧 Features
 
-<table>
-<tr>
-<td>
+<h1 align="left">
+  <img src="https://img.icons8.com/fluency/48/000000/security-checked.png" alt="check" width="35px">
+</h1>
 
-- 🔐 Encrypt PDF documents with **military-grade AES-256** encryption
-- 👥 Set **dual-password protection** (user & owner passwords)
-- 🛡️ Apply **granular permissions** (printing, copying, editing)
-- 📋 Maintain **data retention compliance** with 30-day expiration tracking
-- ⚡ Automate secure PDF workflows with **drag-and-drop** or batch processing
+- 🔒 **Military-Grade Encryption** - AES-256-CBC cryptographic protection for maximum document security
+- **Dual Password Protection** - Separate user (view) and owner (full access) password capabilities
+- 🛡️ **Granular Permissions** - Fine-grained control over printing, copying, editing, and annotation rights
+- 📅 **Compliance Tracking** - 30-day retention monitoring for data protection regulations
+- ⚡ **Drag-and-Drop Interface** - Zero-command-line workflow for rapid encryption
+- 🎯 **Smart File Naming** - Automated timestamped output (YYYYMMDD) with collision prevention
+- 🔄 **Batch Processing** - Sequential multi-file encryption capabilities
+- 🛠️ **Zero Configuration** - Automatic dependency installation on first run
 
-</td>
-</tr>
-</table>
+## Permission Matrix
 
-### 💼 Use Cases
+| Permission Level | Capabilities | Use Case |
+|------------------|--------------|----------|
+| **User Password** | View, Print (High-Quality) | Document distribution to clients/partners |
+| **Owner Password** | Full Access (Copy, Modify, Annotate, Fill Forms) | Internal document management and editing |
+| **No Password** | Restricted Access (Cannot open) | Maximum security for sensitive files |
 
-| Industry | Application |
-|----------|-------------|
-| ⚖️ **Legal** | Contract protection, case file encryption |
-| 🏥 **Healthcare** | HIPAA compliance, patient record security |
-| 💰 **Financial** | Sensitive document encryption, audit trails |
-| 🏢 **Business** | Confidential communications, IP protection |
-| 🎓 **Academic** | Research data security, thesis protection |
+# 📦 Install PDF Password Protection Tool
 
----
+PDF Password Protection Tool requires **Python 3.8+** to install successfully. Follow these steps:
 
-## 🚀 Quick Start
+```bash
+# Option 1: Automated Installation (Windows 10+)
+winget install Python.Python.3.12
+
+# Option 2: Manual Installation
+# Download from https://www.python.org/downloads/
+# ⚠️ CRITICAL: Check "Add Python to PATH" during installation
+
+# Verify installation
+python --version
+```
+
+## For Security Teams
+
+For security teams and compliance professionals, PDF Password Protection Tool provides enterprise-grade capabilities:
+
+- ✅ **HIPAA/PCI DSS Compliance** - Meets encryption requirements for healthcare and financial data
+- ✅ **Audit Trail Generation** - Timestamped file naming for version control and forensics
+- ✅ **Password Policy Enforcement** - Minimum strength requirements (8+ chars for user, 12+ for owner)
+- ✅ **Data Retention Tracking** - Built-in 30-day expiration monitoring for regulatory compliance
+- ✅ **No Data Leakage** - Original files remain unmodified; encrypted copies stored separately
+- ✅ **Cryptographic Standards** - PBKDF2 key derivation and PDF Security Handler Revision 6
+- ✅ **Batch Workflow Support** - Sequential processing for large-scale document protection
+- ✅ **Permission Segregation** - Role-based access control through dual-password architecture
+
+## 🚀 Running the Tool
 
 ### Method 1: Drag & Drop (Recommended)
 
@@ -70,7 +88,7 @@ PDF Password Protection Tool is a **command-line utility** for Windows that enab
 # Encrypted file appears in OUTPUT/ folder
 ```
 
-### Method 2: Command-Line
+### Method 2: Double-Click
 
 ```bash
 # Double-click Protect-PDF.bat
@@ -79,241 +97,79 @@ PDF Password Protection Tool is a **command-line utility** for Windows that enab
 # Output: OUTPUT/sensitive_20251026.pdf
 ```
 
-### First-Time Setup
+### Advanced: Same Password for User and Owner
 
-```powershell
-# Install Python (if not already installed)
-winget install Python.Python.3.12
-
-# PyMuPDF library auto-installs on first run
+```bash
+# When prompted for owner password, press Enter to use same password
+# This grants full access with a single password
 ```
 
----
+### Advanced: Different Passwords for Role Separation
 
-## ✨ Features
-
-<table>
-<tr>
-<th>Capability</th>
-<th>Description</th>
-<th>Status</th>
-</tr>
-<tr>
-<td>🔒 <b>AES-256 Encryption</b></td>
-<td>Industry-standard encryption used by governments</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>🔐 <b>Dual Passwords</b></td>
-<td>Separate user (view) and owner (edit) passwords</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>🎯 <b>Permission Control</b></td>
-<td>Granular settings for print, copy, modify, annotate</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>📅 <b>Smart File Naming</b></td>
-<td>Auto-generates timestamped files (YYYYMMDD)</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>⚡ <b>No Confirmation</b></td>
-<td>Single-entry workflow for speed</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>📋 <b>30-Day Retention</b></td>
-<td>Compliance-ready expiration tracking</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>🔄 <b>Batch Processing</b></td>
-<td>Process multiple files sequentially</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>🛠️ <b>Zero Configuration</b></td>
-<td>Auto-installs dependencies on first run</td>
-<td>✅</td>
-</tr>
-</table>
-
----
-
-## 📊 Permission Matrix
-
-<table align="center">
-<tr>
-<th>Action</th>
-<th>👤 User Password</th>
-<th>👑 Owner Password</th>
-</tr>
-<tr>
-<td>Open & View PDF</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-</tr>
-<tr>
-<td>Print (High-Quality)</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-</tr>
-<tr>
-<td>Copy Text/Images</td>
-<td align="center">❌</td>
-<td align="center">✅</td>
-</tr>
-<tr>
-<td>Modify Content</td>
-<td align="center">❌</td>
-<td align="center">✅</td>
-</tr>
-<tr>
-<td>Add Annotations</td>
-<td align="center">❌</td>
-<td align="center">✅</td>
-</tr>
-<tr>
-<td>Fill Forms</td>
-<td align="center">❌</td>
-<td align="center">✅</td>
-</tr>
-</table>
-
----
-
-## 🔧 Installation
-
-### System Requirements
-
-<table>
-<tr>
-<th>Component</th>
-<th>Minimum</th>
-<th>Recommended</th>
-</tr>
-<tr>
-<td><b>Operating System</b></td>
-<td>Windows 10 (64-bit)</td>
-<td>Windows 11</td>
-</tr>
-<tr>
-<td><b>Python</b></td>
-<td>3.8+</td>
-<td>3.12+</td>
-</tr>
-<tr>
-<td><b>RAM</b></td>
-<td>512MB</td>
-<td>1GB</td>
-</tr>
-<tr>
-<td><b>Storage</b></td>
-<td>50MB</td>
-<td>100MB</td>
-</tr>
-</table>
-
-### Option 1: Automated Installation (Windows 10+)
-
-```powershell
-# Open PowerShell as Administrator
-winget install Python.Python.3.12
-
-# Verify installation
-python --version
+```bash
+# Set user password: ViewOnly123!
+# Set owner password: FullAccess456!@
+# Distribute user password to viewers, keep owner password for editors
 ```
 
-### Option 2: Manual Installation
+### Batch Processing Example
 
-1. Download Python from [python.org](https://www.python.org/downloads/)
-2. Run installer
-3. ⚠️ **CRITICAL:** Check "Add Python to PATH"
-4. Complete installation
-5. Restart terminal
-
-### Dependency Management
-
-```powershell
-# Manual dependency installation (if needed)
-pip install PyMuPDF
-
-# Verify installation
-python -c "import fitz; print(fitz.__doc__)"
+```bash
+# Process multiple files by running Protect-PDF.bat repeatedly
+# Or create a PowerShell script for automation:
+Get-ChildItem *.pdf | ForEach-Object {
+    # Call Protect-PDF.bat with each file
+}
 ```
 
----
+## 📊 Encryption Specifications
+
+| Component | Implementation | Standard |
+|-----------|----------------|----------|
+| **Algorithm** | AES-256-CBC | FIPS 197 |
+| **Key Derivation** | PBKDF2 | PKCS #5 v2.0 |
+| **Permission Encoding** | PDF Security Handler Revision 6 | ISO 32000-2 |
+| **Metadata Protection** | Encrypted | PDF 2.0 Standard |
 
 ## 🛡️ Security Architecture
-
-### Encryption Specifications
-
-<table>
-<tr>
-<th>Parameter</th>
-<th>Configuration</th>
-</tr>
-<tr>
-<td><b>Algorithm</b></td>
-<td>AES-256-CBC</td>
-</tr>
-<tr>
-<td><b>Key Derivation</b></td>
-<td>PBKDF2 (Password-Based Key Derivation Function 2)</td>
-</tr>
-<tr>
-<td><b>Permission Encoding</b></td>
-<td>PDF Standard Security Handler Revision 6</td>
-</tr>
-<tr>
-<td><b>Metadata Protection</b></td>
-<td>Encrypted</td>
-</tr>
-</table>
 
 ### Password Policy
 
 **User Password (Minimum Requirements):**
 - ✅ 8+ characters
-- ✅ Mixed case letters
+- ✅ Mixed case letters (uppercase + lowercase)
 - ✅ Numeric digits
-- ✅ Special characters
+- ✅ Special characters recommended
 
 **Owner Password (Enhanced Requirements):**
-- ✅ 12+ characters
+- ✅ 12+ characters minimum
 - ✅ Must differ from user password
-- ✅ Grants full document access
+- ✅ Grants unrestricted document access
 
 > ⚠️ **Security Notice:** Passwords are displayed during input. Ensure no visual surveillance when entering credentials.
 
 ### Data Handling
 
-- **Original Files:** Remain unmodified
-- **Output Location:** `OUTPUT/` directory (auto-created)
+- **Original Files:** Remain unmodified in source location
+- **Output Location:** `OUTPUT/` directory (automatically created)
 - **Naming Convention:** `{original_name}_{YYYYMMDD}.pdf`
-- **Collision Handling:** Appends `_1`, `_2`, etc.
-
----
+- **Collision Handling:** Sequential numbering (`_1`, `_2`, etc.) for same-day duplicates
 
 ## 📁 Project Structure
 
 ```
 pdf-password/
 │
-├── Protect-PDF.bat                # Main executable
+├── Protect-PDF.bat                # Main executable (Windows)
 ├── README.md                      # Documentation
 ├── README.html                    # Styled documentation
 │
 ├── scripts/
-│   ├── protect_pdf.py             # Encryption engine
+│   ├── protect_pdf.py             # Encryption engine (PyMuPDF-based)
 │   └── Protect-PDF-Simple.ps1     # PowerShell wrapper
 │
 └── OUTPUT/                        # Encrypted PDFs (auto-created)
 ```
-
----
 
 ## 🔍 Troubleshooting
 
@@ -329,6 +185,9 @@ python --version
 
 # If not found, reinstall with PATH option checked
 winget install Python.Python.3.12
+
+# Alternative: Add Python to PATH manually
+# Settings > System > About > Advanced system settings > Environment Variables
 ```
 </details>
 
@@ -345,6 +204,9 @@ pip install PyMuPDF
 
 # Alternative: Use conda
 conda install -c conda-forge pymupdf
+
+# Verify installation
+python -c "import fitz; print(fitz.__doc__)"
 ```
 </details>
 
@@ -360,69 +222,74 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 # Verify change
 Get-ExecutionPolicy
+
+# Should return: RemoteSigned
 ```
 </details>
 
 <details>
-<summary><b>❌ PDF output is corrupted</b></summary>
+<summary><b>❌ PDF output is corrupted or won't open</b></summary>
 
 <br>
 
 **Solution:**
-- Ensure input PDF is not already encrypted
-- Verify sufficient disk space
-- Try re-running with a different output name
-- Check PyMuPDF version: `pip show PyMuPDF`
+- Ensure input PDF is not already encrypted/password-protected
+- Verify sufficient disk space in OUTPUT directory
+- Check PyMuPDF version compatibility: `pip show PyMuPDF`
+- Try with a different PDF to isolate file-specific issues
+- Ensure PDF is not open in another application during encryption
 </details>
 
----
+<details>
+<summary><b>❌ Password not accepted when opening encrypted PDF</b></summary>
+
+<br>
+
+**Solution:**
+- Verify no extra spaces before/after password
+- Check CAPS LOCK status (passwords are case-sensitive)
+- Remember: User password for viewing, Owner password for full access
+- If same password was used for both, either password will work
+</details>
 
 ## 📝 Changelog
 
 ### Version 1.0.5 (2025-10-25)
 
-- 🔇 **Cleaner Output** - Suppressed library check messages when already installed
-- ✨ **Better UX** - Only shows messages when action is needed
-- 🎨 **Visual Enhancement** - Added ASCII banner display at startup
+- 🔇 **Cleaner Output** - Suppressed library check messages when dependencies already installed
+- ✨ **Better UX** - Only displays messages when user action required
+- 🎨 **Visual Enhancement** - ASCII banner display at startup
 - ⚡ **Optimized** - Removed redundant success messages
 
 ### Version 1.0.4 (2025-10-24)
 
-- ✨ Owner password grants full access (copy, modify, annotate)
-- 🖨️ High-quality printing permission for all users
-- 🔒 Owner password: 12+ chars, must differ from user password
+- ✨ Owner password grants full access (copy, modify, annotate, fill forms)
+- 🖨️ High-quality printing permission for all password types
+- 🔒 Owner password: 12+ character minimum, must differ from user password
 - ⚡ Removed password confirmation for faster workflow
-- 🎨 Fixed terminal box alignment
-- 📂 Organized folder structure
-- 🪟 Custom terminal window title
-- 🎯 Changed timestamp format: HHMM → YYYYMMDD
-
-<p align="right"><a href="CHANGELOG.md">View Full Changelog →</a></p>
-
----
+- 🎨 Fixed terminal box alignment issues
+- 📂 Organized structure: scripts in subfolder, outputs in OUTPUT directory
+- 🪟 Custom terminal window title for easy identification
+- 🎯 Changed timestamp format from HHMM to YYYYMMDD
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! Here's how you can help:
+We welcome contributions from the security and compliance community! Here's how you can help:
 
 <table>
 <tr>
 <td align="center">🐛<br><b>Report Bugs</b><br>Open an issue with detailed reproduction steps</td>
-<td align="center">💡<br><b>Suggest Features</b><br>Share your ideas for improvements</td>
-<td align="center">📖<br><b>Improve Docs</b><br>Help us make guides clearer</td>
-<td align="center">🔧<br><b>Submit PRs</b><br>Follow our coding standards</td>
+<td align="center">💡<br><b>Suggest Features</b><br>Share ideas for encryption workflows</td>
+<td align="center">📖<br><b>Improve Docs</b><br>Help clarify usage and security guidance</td>
+<td align="center">🔧<br><b>Submit PRs</b><br>Follow coding standards and test thoroughly</td>
 </tr>
 </table>
-
----
 
 ## 📄 License
 
 **Authorized Use Only**
 
-This tool is provided for legitimate security and compliance purposes. Users are responsible for ensuring compliance with applicable laws and regulations.
-
----
+This tool is provided for legitimate security, compliance, and data protection purposes. Users are responsible for ensuring compliance with applicable laws and regulations regarding encryption and data privacy.
 
 ## 💬 Support
 
@@ -434,19 +301,17 @@ This tool is provided for legitimate security and compliance purposes. Users are
 
 For questions, issues, or feature requests:
 
-- 📧 **Email:** [Your Email]
 - 🐛 **Issues:** [GitHub Issues](https://github.com/frustrat3d-aud1t0r/Protect-PDF/issues)
 - 📖 **Documentation:** [Full Documentation](README.html)
+- 💬 **Community:** Open a discussion for general questions
 
 </td>
 </tr>
 </table>
 
----
-
 ## 🌟 Acknowledgments
 
-Built with these amazing technologies:
+Built with these powerful technologies:
 
 <table>
 <tr>
@@ -455,21 +320,21 @@ Built with these amazing technologies:
 <img src="https://img.shields.io/badge/PyMuPDF-Library-blue?style=for-the-badge" alt="PyMuPDF"/><br>
 <b>PyMuPDF</b>
 </a><br>
-High-performance PDF library
+High-performance PDF processing library
 </td>
 <td align="center">
 <a href="https://www.python.org/">
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/><br>
 <b>Python</b>
 </a><br>
-Programming language
+Cross-platform programming language
 </td>
 <td align="center">
 <a href="https://docs.microsoft.com/powershell/">
 <img src="https://img.shields.io/badge/PowerShell-0078D6?style=for-the-badge&logo=powershell&logoColor=white" alt="PowerShell"/><br>
 <b>PowerShell</b>
 </a><br>
-Automation framework
+Windows automation framework
 </td>
 </tr>
 </table>
@@ -495,5 +360,5 @@ Automation framework
 ---
 
 <p align="center">
-  <sub>© 2025 PDF Password Protection Tool | AES-256 Encryption</sub>
+  <sub>© 2025 PDF Password Protection Tool | AES-256 Encryption Standard</sub>
 </p>
