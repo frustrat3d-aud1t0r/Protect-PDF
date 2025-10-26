@@ -39,7 +39,6 @@ PDF Password Protection Tool is a specialized Windows utility designed to automa
 - 📅 **Compliance Tracking** - 30-day retention monitoring for data protection regulations
 - ⚡ **Drag-and-Drop Interface** - Zero-command-line workflow for rapid encryption
 - 🎯 **Smart File Naming** - Automated timestamped output (YYYYMMDD) with collision prevention
-- 🔄 **Batch Processing** - Sequential multi-file encryption capabilities
 - 🛠️ **Zero Configuration** - Automatic dependency installation on first run
 
 ## Permission Matrix
@@ -115,16 +114,6 @@ For security teams and compliance professionals, PDF Password Protection Tool pr
 # Set user password: ViewOnly123!
 # Set owner password: FullAccess456!@
 # Distribute user password to viewers, keep owner password for editors
-```
-
-### Batch Processing Example
-
-```bash
-# Process multiple files by running Protect-PDF.bat repeatedly
-# Or create a PowerShell script for automation:
-Get-ChildItem *.pdf | ForEach-Object {
-    # Call Protect-PDF.bat with each file
-}
 ```
 
 ## 📊 Encryption Specifications
